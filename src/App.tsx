@@ -16,7 +16,7 @@ const ShoppingCart = () => {
         price: 0,
     });
     const [total, setTotal] = useState<number>(0);
-    const [error, setError] = useState<string>("");
+    const [_error, setError] = useState<string>("");
 
     
 
