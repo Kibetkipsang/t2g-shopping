@@ -81,6 +81,7 @@ const ShoppingCart = () => {
                 />
                 <button className="add-btn" >Add Item</button>
             </form>
+            {itemList.length === 0 ? <p className="no-items">No items in the cart.</p> : 
             <div className="item-list">
                 {itemList.map((item, idx) => (
                     <div className="items-table" key={idx}>
@@ -90,6 +91,7 @@ const ShoppingCart = () => {
                     </div>
                 ))}
             </div>
+            }
             <div className="total-price">
                 <label htmlFor="total">Grand Total: {total} </label>
             </div>
